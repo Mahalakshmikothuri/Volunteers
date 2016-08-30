@@ -681,11 +681,11 @@ global with sharing class VOL_SharedCode {
             if (!fCheckedForVolunteersNamespace) {
             	// in order for this call to work as expected, we must be API Version 28, but we
             	// want to stay at version 25, so let's find another way!!
-                //Schema.SObjectType token = Schema.getGlobalDescribe().get('GW_Volunteers__Volunteer_Job__c');
+                //Schema.SObjectType token = Schema.getGlobalDescribe().get('Volunteer_Job__c');
                 //IsManagedCode = (token != null);
 
     			Map<String, Schema.SObjectField> M = Schema.SObjectType.Contact.fields.getMap();
-    			Schema.SObjectField fld = M.get('gw_volunteers__volunteer_status__c');
+    			Schema.SObjectField fld = M.get('volunteer_status__c');
 				IsManagedCode = (fld != null);
                 
                 fCheckedForVolunteersNamespace = true;
@@ -704,7 +704,7 @@ global with sharing class VOL_SharedCode {
     ********************************************************************************************************/
     global static string StrTokenNSPrefix(string str) {
         if (!IsManagedCode) return str;
-        str = 'GW_Volunteers__' + str;
+        str = '' + str;
         return str;
     }
   
@@ -754,7 +754,7 @@ global with sharing class VOL_SharedCode {
 		    for (String strField : listStrField) {
 				// Check if the user has access on the each field
 		        // note that fields in our own package must not have their prefix for the Describe Field Map  
-		        Schema.SObjectField fld = mapFieldDesc.get(strField.replace('GW_Volunteers__', ''));     
+		        Schema.SObjectField fld = mapFieldDesc.get(strField.replace('', ''));     
 		        if (fld != null && !fld.getDescribe().isAccessible()) {
 		        	ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.FATAL, 'Field ' + strObj + '.' + strField +
 		          		' needs to have field level security enabled on the Site\'s Guest User profile. Please see the V4S Installation & Configuration Guide.'));
