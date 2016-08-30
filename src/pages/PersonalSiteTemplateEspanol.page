@@ -51,10 +51,10 @@
             </div>
             <div class="navbar-inner" style="padding:0 20px;">              
                 <ul class="nav">
-                    <li class="{!IF($CurrentPage.Name == 'GW_Volunteers__PersonalSiteJobListing', 'active', '')}"><a href="{!$Page.PersonalSiteJobListing + '?Language=ES&nMonthsToShow=1&DateFormat=d/M/yy'}" >Lista de Trabajos Voluntarios</a></li>
-                    <li class="{!IF($CurrentPage.Name == 'GW_Volunteers__PersonalSiteJobCalendar', 'active', '')}"><a href="{!$Page.PersonalSiteJobCalendar + '?Language=ES&nMonthsToShow=1&DateFormat=d/M/yy'}" >Calendario de Trabajo del Voluntario</a></li>
-                    <li class="{!IF($CurrentPage.Name == 'GW_Volunteers__PersonalSiteContactInfo', 'active', '')}"><a href="{!$Page.PersonalSiteContactInfo + '?Language=ES'}" >Tu Información</a></li>
-                    <li class="{!IF($CurrentPage.Name == 'GW_Volunteers__PersonalSiteReportHours', 'active', '')}"><a href="{!$Page.PersonalSiteReportHours + '?Language=ES'}" >Registra tus Horas como Voluntario</a></li>                
+                    <li class="{!IF($CurrentPage.Name == 'PersonalSiteJobListing', 'active', '')}"><a href="{!$Page.PersonalSiteJobListing + '?Language=ES&nMonthsToShow=1&DateFormat=d/M/yy'}" >Lista de Trabajos Voluntarios</a></li>
+                    <li class="{!IF($CurrentPage.Name == 'PersonalSiteJobCalendar', 'active', '')}"><a href="{!$Page.PersonalSiteJobCalendar + '?Language=ES&nMonthsToShow=1&DateFormat=d/M/yy'}" >Calendario de Trabajo del Voluntario</a></li>
+                    <li class="{!IF($CurrentPage.Name == 'PersonalSiteContactInfo', 'active', '')}"><a href="{!$Page.PersonalSiteContactInfo + '?Language=ES'}" >Tu Información</a></li>
+                    <li class="{!IF($CurrentPage.Name == 'PersonalSiteReportHours', 'active', '')}"><a href="{!$Page.PersonalSiteReportHours + '?Language=ES'}" >Registra tus Horas como Voluntario</a></li>                
                 </ul>
             </div>          
         </div>
