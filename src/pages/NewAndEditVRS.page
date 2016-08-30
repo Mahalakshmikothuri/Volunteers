@@ -44,7 +44,7 @@
 						<apex:actionRegion >
 							<apex:inputField value="{!vrs[f]}" required="{!IF(OR(f.DBRequired, f.Required), 'true', 'false')}" >
 		               	        <apex:actionSupport immediate="false" event="onchange" 
-		               	        	rerender="pbsJRS" status="retrieveStatus" rendered="{!IF(f == 'GW_Volunteers__Volunteer_Job__c', 'true', 'false')}" 
+		               	        	rerender="pbsJRS" status="retrieveStatus" rendered="{!IF(f == 'Volunteer_Job__c', 'true', 'false')}" 
 		               	        	action="{!refreshListSOJRS}" />                        
 							</apex:inputField> 
 						</apex:actionRegion>
