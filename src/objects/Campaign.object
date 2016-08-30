@@ -943,7 +943,7 @@
         <masterLabel>Volunteer Roster</masterLabel>
         <openType>replace</openType>
         <protected>false</protected>
-        <url>/apex/GW_Volunteers__OpenReport?ReportDevName=Volunteer_Roster&amp;pv0={!Campaign.Id}</url>
+        <url>/apex/OpenReport?ReportDevName=Volunteer_Roster&amp;pv0={!Campaign.Id}</url>
     </webLinks>
     <webLinks>
         <fullName>Campaign_Shift_Calendar</fullName>
@@ -954,7 +954,7 @@
         <masterLabel>Shift Calendar</masterLabel>
         <openType>replace</openType>
         <protected>false</protected>
-        <url>/apex/GW_Volunteers__JobCalendar?campaignId={!Campaign.Id}</url>
+        <url>/apex/JobCalendar?campaignId={!Campaign.Id}</url>
     </webLinks>
     <webLinks>
         <fullName>Find_Volunteers</fullName>
@@ -966,7 +966,7 @@
         <masterLabel>Find Volunteers</masterLabel>
         <openType>sidebar</openType>
         <protected>false</protected>
-        <url>/apex/GW_Volunteers__VolunteersFind?campaignId={!Campaign.Id}</url>
+        <url>/apex/VolunteersFind?campaignId={!Campaign.Id}</url>
     </webLinks>
     <webLinks>
         <fullName>Mass_Email_Volunteers</fullName>
@@ -978,7 +978,7 @@
         <masterLabel>Mass Email Volunteers</masterLabel>
         <openType>sidebar</openType>
         <protected>false</protected>
-        <url>/apex/GW_Volunteers__SendBulkEmail?campaignId={!Campaign.Id}&amp;retURL={! 
+        <url>/apex/SendBulkEmail?campaignId={!Campaign.Id}&amp;retURL={! 
 URLFOR( $Action.Campaign.View ,  Campaign.Id ) }</url>
     </webLinks>
     <webLinks>
@@ -992,6 +992,6 @@ URLFOR( $Action.Campaign.View ,  Campaign.Id ) }</url>
         <openType>sidebar</openType>
         <protected>false</protected>
         <requireRowSelection>false</requireRowSelection>
-        <url>/apex/GW_Volunteers__VolunteersCampaignWizard</url>
+        <url>/apex/VolunteersCampaignWizard</url>
     </webLinks>
 </CustomObject>
