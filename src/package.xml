@@ -2,8 +2,7 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Volunteers for Salesforce</fullName>
     <apiAccessLevel>Unrestricted</apiAccessLevel>
-    <description>Volunteers for Salesforce managed package, by David Habib of DJH Consulting.</description>
-    <namespacePrefix>GW_Volunteers</namespacePrefix>
+    <description>Volunteers for Salesforce unmanaged package, by David Habib of DJH Consulting.</description>
     <types>
         <members>ComponentControllerBase</members>
         <members>GW_CTRL_BatchJobsProgress</members>
