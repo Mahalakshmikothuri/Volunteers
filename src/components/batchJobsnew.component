@@ -34,7 +34,7 @@
 *
 * Component that displays progress for batch apex jobs 
 * Usage:
-*		<c:batchJobs batchComponentLabel="Batch Progress" numberOfJobs="1" />
+*		<c:batchJobsnew batchComponentLabel="Batch Progress" numberOfJobs="1" />
 *
 * modified by David Habib, copyright (c) 2013 DJH Consulting, djhconsulting.com 
 -->  
@@ -68,7 +68,7 @@
     <apex:actionPoller rerender="jobs" interval="5" />
  
     <apex:pageBlock title="{!batchComponentLabel}">
-        <apex:pageBlockTable value="{!batchJobs}" var="b" id="jobs">
+        <apex:pageBlockTable value="{!batchJobsnew}" var="b" id="jobs">
             <apex:column headerValue="Apex Class" value="{!b.job.ApexClass.Name}"/>
             <apex:column value="{!b.job.CreatedDate}"/>
             <apex:column value="{!b.job.CreatedById}"/>
