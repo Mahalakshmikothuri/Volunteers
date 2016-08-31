@@ -59,7 +59,7 @@
     </types>
     <types>
         <members>SoqlListView</members>
-        <members>batchJobs</members>
+        <members>batchJobsnew</members>
         <name>ApexComponent</name>
     </types>
     <types>
@@ -355,6 +355,8 @@
         <members>labelVolunteersWizardSampleShiftName</members>
         <members>labelVolunteersWizardSampleShifts</members>
         <members>labelVolunteersWizardTitle</members>
+        <members>labelEventInThePast</members>
+        <members>labelFirstShift</members>
         <name>CustomLabel</name>
     </types>
     <types>
