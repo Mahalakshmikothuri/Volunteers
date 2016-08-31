@@ -45,7 +45,7 @@
 */
 public with sharing class GW_CTRL_BatchJobsProgress {
  
-    private List<BatchJob> batchJobs;
+    private List<BatchJob> batchJobsnew;
     
 	/*******************************************************************************************************
     * @description number of batch jobs the control will monitor
@@ -62,7 +62,7 @@ public with sharing class GW_CTRL_BatchJobsProgress {
 	*/ 	
     public List<BatchJob> getBatchJobs() {
         //Create new list of BatchJobs, a wrapper class that includes the job and percent complete.
-        batchJobs = new List<BatchJob>();
+        batchJobsnew = new List<BatchJob>();
  
         //If number of jobs was not defined, default to 20
         if(numberOfJobs== null || numberofJobs <= 0) {
@@ -97,9 +97,9 @@ public with sharing class GW_CTRL_BatchJobsProgress {
                 j.percentComplete = ((itemsProcessed  / totalItems) * 100.0).intValue();
             }
  
-            batchJobs.add(j);
+            batchJobsnew.add(j);
         }
-        return batchJobs;
+        return batchJobsnew;
     }
  
     
