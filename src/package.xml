@@ -5,7 +5,6 @@
     <description>Volunteers for Salesforce unmanaged package, by David Habib of DJH Consulting.</description>
     <types>
         <members>ComponentControllerBase</members>
-        <members>GW_CTRL_BatchJobsProgress</members>
         <members>PageControllerBase</members>
         <members>SoqlListView</members>
         <members>VOL_BATCH_Recurrence</members>
@@ -59,7 +58,6 @@
     </types>
     <types>
         <members>SoqlListView</members>
-        <members>batchJobsnew</members>
         <name>ApexComponent</name>
     </types>
     <types>
@@ -413,12 +411,7 @@
         <members>Volunteers_Wizard</members>
         <name>CustomTab</name>
     </types>
-    <types>
-        <members>Volunteer_Dashboards</members>
-        <members>Volunteer_Dashboards/Panel_de_Voluntarios</members>
-        <members>Volunteer_Dashboards/Volunteers_Dashboard2</members>
-        <name>Dashboard</name>
-    </types>
+    
     <types>
         <members>Volunteers_Documents</members>
         <members>Volunteers_Documents/JobCalendarCSS_css.css</members>
@@ -509,40 +502,7 @@
         <members>Campaign.Volunteers_Campaign</members>
         <name>RecordType</name>
     </types>
-    <types>
-        <members>Volunteer_Reports</members>
-        <members>Volunteer_Reports/Active_Volunteers</members>
-        <members>Volunteer_Reports/Available_Volunteer_Jobs</members>
-        <members>Volunteer_Reports/Inactive_Volunteers</members>
-        <members>Volunteer_Reports/New_Sign_Ups_Contacts</members>
-        <members>Volunteer_Reports/New_Sign_Ups_Leads</members>
-        <members>Volunteer_Reports/Prospective_Volunteers</members>
-        <members>Volunteer_Reports/Recent_Volunteers</members>
-        <members>Volunteer_Reports/Top_Volunteers_by_Lifetime_Hours</members>
-        <members>Volunteer_Reports/Top_Volunteers_by_Recent_Hours</members>
-        <members>Volunteer_Reports/Unassigned_Volunteers2</members>
-        <members>Volunteer_Reports/Unique_Volunteers2</members>
-        <members>Volunteer_Reports/Upcoming_Shifts_Needing_Volunteers</members>
-        <members>Volunteer_Reports/Upcoming_Shifts_with_Volunteers</members>
-        <members>Volunteer_Reports/Upcoming_Volunteers</members>
-        <members>Volunteer_Reports/Volunteer_Hours_By_Month_Matrix</members>
-        <members>Volunteer_Reports/Volunteer_Hours_This_Year2</members>
-        <members>Volunteer_Reports/Volunteer_Hours_by_Account</members>
-        <members>Volunteer_Reports/Volunteer_Hours_by_Campaign</members>
-        <members>Volunteer_Reports/Volunteer_Hours_by_Job</members>
-        <members>Volunteer_Reports/Volunteer_Hours_by_Month2</members>
-        <members>Volunteer_Reports/Volunteer_Hours_for_Dashboard2</members>
-        <members>Volunteer_Reports/Volunteer_Jobs_With_Shift_Summary</members>
-        <members>Volunteer_Reports/Volunteer_Roster</members>
-        <members>Volunteer_Reports/Volunteers_Daily_Roster</members>
-        <members>Volunteer_Reports/Volunteers_Last_Month</members>
-        <members>Volunteer_Reports/Volunteers_This_Year</members>
-        <members>Volunteer_Reports/Volunteers_by_Account</members>
-        <members>Volunteer_Reports/Volunteers_by_Availability</members>
-        <members>Volunteer_Reports/Volunteers_by_Skill</members>
-        <members>Volunteer_Reports/Volunteers_with_any_Volunteer_Status</members>
-        <name>Report</name>
-    </types>
+   
     <types>
         <members>Accounts</members>
         <members>Volunteer_Campaigns</members>
