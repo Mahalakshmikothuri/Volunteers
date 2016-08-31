@@ -32,15 +32,15 @@
 public with sharing class VOL_CTRL_BatchProgress_TEST {
 
     //--------------------TEST METHOD------------------------
-    public static testMethod void batchStatusBarTest(){
-        GW_CTRL_BatchJobsProgress controller = new GW_CTRL_BatchJobsProgress();
-        controller.getBatchJobs();
-        controller.numberOfJobs = 10;
-        system.assertEquals(10, controller.numberOfJobs);
-        controller.batchComponentLabel = 'my label';
-        system.assertEquals('my label', controller.batchComponentLabel);
+   // public static testMethod void batchStatusBarTest(){
+    //    GW_CTRL_BatchJobsProgress controller = new GW_CTRL_BatchJobsProgress();
+    //    controller.getBatchJobs();
+    //    controller.numberOfJobs = 10;
+    //    system.assertEquals(10, controller.numberOfJobs);
+    //    controller.batchComponentLabel = 'my label';
+    //    system.assertEquals('my label', controller.batchComponentLabel);
         
-    }
+    //}
     
     public static testMethod void testRollup() {
         VOL_CTRL_BatchProgress controller = new VOL_CTRL_BatchProgress();
